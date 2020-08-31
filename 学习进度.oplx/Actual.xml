@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="begFv7qGWc2">
+  <start-date>2020-08-31T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t21"/>
+    <child-task idref="t23"/>
+  </task>
+  <task id="t2">
+    <title>Java-B站学习视频</title>
+    <type>group</type>
+    <child-task idref="t4"/>
+    <child-task idref="t6"/>
+    <child-task idref="t8"/>
+    <child-task idref="t10"/>
+    <child-task idref="t14"/>
+  </task>
+  <task id="t4">
+    <title>内部类案例+自由类</title>
+    <effort>57600</effort>
+    <start-constraint-date>2020-08-28T08:45:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>01_final</lit>
+          </run>
+          <run>
+            <lit>关键字概念与四种用法     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_final</lit>
+          </run>
+          <run>
+            <lit>关键字用于修饰类     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_final</lit>
+          </run>
+          <run>
+            <lit>关键字用于修饰成员方法     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_final</lit>
+          </run>
+          <run>
+            <lit>关键字用于修饰局部变     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_final</lit>
+          </run>
+          <run>
+            <lit>关键字用于修饰成员     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_</lit>
+          </run>
+          <run>
+            <lit>四种权限修饰符     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_</lit>
+          </run>
+          <run>
+            <lit>内部类的概念与分类     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_</lit>
+          </run>
+          <run>
+            <lit>成员内部类的定义     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>09_</lit>
+          </run>
+          <run>
+            <lit>成员内部类的使用     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>10_</lit>
+          </run>
+          <run>
+            <lit>内部类的同名变量访问     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>11_</lit>
+          </run>
+          <run>
+            <lit>局部内部类定义     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>12_</lit>
+          </run>
+          <run>
+            <lit>局部内部类的final问题     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>13_</lit>
+          </run>
+          <run>
+            <lit>匿名内部类     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>14_</lit>
+          </run>
+          <run>
+            <lit>匿名内部类的注意事项</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>15_</lit>
+          </run>
+          <run>
+            <lit>类作为成员变量类型</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>16_</lit>
+          </run>
+          <run>
+            <lit>接口作为成员变量类型</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>17_</lit>
+          </run>
+          <run>
+            <lit>接口作为方法的参数和或返回值</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>18_</lit>
+          </run>
+          <run>
+            <lit>发红包案例_分析</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>19_</lit>
+          </run>
+          <run>
+            <lit>发红包案例_普通红包平均分发</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>20_</lit>
+          </run>
+          <run>
+            <lit>发红包案例_手气红包随机分发</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>01_Object</lit>
+          </run>
+          <run>
+            <lit>类的toString方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_Object</lit>
+          </run>
+          <run>
+            <lit>类的equals方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_</lit>
+          </run>
+          <run>
+            <lit>重写Object类的equals方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_Objects</lit>
+          </run>
+          <run>
+            <lit>类的equals方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_Object</lit>
+          </run>
+          <run>
+            <lit>类&amp;Objects类总结</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_</lit>
+          </run>
+          <run>
+            <lit>毫秒值的概念和作用</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_Date</lit>
+          </run>
+          <run>
+            <lit>类的构造方法和成员方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_DateFormat</lit>
+          </run>
+          <run>
+            <lit>类&amp;SimpleDateFormat类介绍</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>09_DateFormat</lit>
+          </run>
+          <run>
+            <lit>类的format方法和parse方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>10_</lit>
+          </run>
+          <run>
+            <lit>练习_请使用日期时间相关的API，计算出一个人已经出生了多少天</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>11_Calendar</lit>
+          </run>
+          <run>
+            <lit>类介绍_获取对象的方式</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>12_Calendar</lit>
+          </run>
+          <run>
+            <lit>类的常用成员方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>13_1_</lit>
+          </run>
+          <run>
+            <lit>时间日期相关类总结</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>13_System</lit>
+          </run>
+          <run>
+            <lit>类的常用方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>14_StringBuilder</lit>
+          </run>
+          <run>
+            <lit>的原理</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>15_StringBuilder</lit>
+          </run>
+          <run>
+            <lit>的构造方法和append方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>16_1System</lit>
+          </run>
+          <run>
+            <lit>类&amp;StringBuilder类</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>16_StringBuilder</lit>
+          </run>
+          <run>
+            <lit>的toString方法</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>17_</lit>
+          </run>
+          <run>
+            <lit>包装类的概念</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>18_</lit>
+          </run>
+          <run>
+            <lit>包装类_装箱与拆箱</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>19_</lit>
+          </run>
+          <run>
+            <lit>包装类_自动装箱与自动拆箱</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>20_</lit>
+          </run>
+          <run>
+            <lit>包装类_基本类型与字符串类型之间的相互转换</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>21_</lit>
+          </run>
+          <run>
+            <lit>包装类总结</lit>
+          </run>
+        </p>
+        <p/>
+      </text>
+    </note>
+    <start-no-earlier-than>2020-08-28T08:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t6">
+    <title>Collection集合+泛型+斗地主案例</title>
+    <effort>28800</effort>
+    <start-constraint-date>2020-09-02T00:00:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit> 01_Collection</lit>
+          </run>
+          <run>
+            <lit>集合概述     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 02_</lit>
+          </run>
+          <run>
+            <lit>集合框架介绍avi     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 03_Collection</lit>
+          </run>
+          <run>
+            <lit>集合常用功能     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 04_Iterator</lit>
+          </run>
+          <run>
+            <lit>接口介绍     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 05_</lit>
+          </run>
+          <run>
+            <lit>迭代器的代码实现     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 06_</lit>
+          </run>
+          <run>
+            <lit>迭代器的实现原理     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 07_</lit>
+          </run>
+          <run>
+            <lit>增强for循环    </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 01_</lit>
+          </run>
+          <run>
+            <lit>泛型的概念     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 02_</lit>
+          </run>
+          <run>
+            <lit>使用泛型的好处     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 03_</lit>
+          </run>
+          <run>
+            <lit>定义和使用含有泛型的类     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 04_</lit>
+          </run>
+          <run>
+            <lit>定义和使用含有泛型的方法(1)     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 05_</lit>
+          </run>
+          <run>
+            <lit>定义和使用含有泛型的接口     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 06_</lit>
+          </run>
+          <run>
+            <lit>泛型通配符     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 01_</lit>
+          </run>
+          <run>
+            <lit>斗地主案例的需求分析     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit> 02_</lit>
+          </run>
+          <run>
+            <lit>斗地主案例的代码实现       </lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <start-no-earlier-than>2020-09-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t8">
+    <title>异常</title>
+    <effort>28800</effort>
+    <start-constraint-date>2020-09-03T00:15:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>01_</lit>
+          </run>
+          <run>
+            <lit>异常概念&amp;异常体系     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_</lit>
+          </run>
+          <run>
+            <lit>异常分类     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_</lit>
+          </run>
+          <run>
+            <lit>异常的产生过程解析     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_throw</lit>
+          </run>
+          <run>
+            <lit>关键字     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_Objects</lit>
+          </run>
+          <run>
+            <lit>非空判断_requireNonNul  </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_throws</lit>
+          </run>
+          <run>
+            <lit>关键字_异常处理的第一种方   </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_try_catch_</lit>
+          </run>
+          <run>
+            <lit>异常处理的第二种方式,  </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_Throwable</lit>
+          </run>
+          <run>
+            <lit>类中3个异常处理的方法   </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>09_finally</lit>
+          </run>
+          <run>
+            <lit>代码块     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>10_</lit>
+          </run>
+          <run>
+            <lit>异常注意事项_多异常的捕获处理     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>11_</lit>
+          </run>
+          <run>
+            <lit>异常注意事项_finally有return语句 </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>12_</lit>
+          </run>
+          <run>
+            <lit>异常注意事项_子父类异常   </lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <start-no-earlier-than>2020-09-03T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t10">
+    <title>线程安全问题 + 唤醒</title>
+    <effort>28800</effort>
+    <start-constraint-date>2020-09-04T00:00:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>01_</lit>
+          </run>
+          <run>
+            <lit>线程安全问题的概述     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_</lit>
+          </run>
+          <run>
+            <lit>线程安全问题的代码实现     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_</lit>
+          </run>
+          <run>
+            <lit>线程安全问题产生的原理     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_</lit>
+          </run>
+          <run>
+            <lit>解决线程安全问题_同步代码块     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_</lit>
+          </run>
+          <run>
+            <lit>同步技术的原理     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_</lit>
+          </run>
+          <run>
+            <lit>解决线程安全问题_同步方法     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_</lit>
+          </run>
+          <run>
+            <lit>静态同步方法     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_</lit>
+          </run>
+          <run>
+            <lit>解决线程安全问题_Lock锁   </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>01_</lit>
+          </run>
+          <run>
+            <lit>线程状态概述     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒案例分析     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒案例代码实现     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_Object</lit>
+          </run>
+          <run>
+            <lit>类中wait带参方法和notif    </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_</lit>
+          </run>
+          <run>
+            <lit>线程间通信     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒机制概述     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒机制需求分析     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒机制代码实现_包子类&amp;包     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>09_</lit>
+          </run>
+          <run>
+            <lit>等待唤醒机制代码实现_吃货类&amp;测试     </lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <start-no-earlier-than>2020-09-04T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t14">
+    <title>并发与并行</title>
+    <effort>28800</effort>
+    <start-constraint-date>2020-09-07T00:00:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>01_</lit>
+          </run>
+          <run>
+            <lit>并发与并行     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>02_</lit>
+          </run>
+          <run>
+            <lit>进程概念     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>03_</lit>
+          </run>
+          <run>
+            <lit>线程概念     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>04_</lit>
+          </run>
+          <run>
+            <lit>线程调度     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>05_</lit>
+          </run>
+          <run>
+            <lit>主线程     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>06_</lit>
+          </run>
+          <run>
+            <lit>创建多线程程序的第一种方式_创     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>07_</lit>
+          </run>
+          <run>
+            <lit>多线程原理_随机性打印结果     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>08_</lit>
+          </run>
+          <run>
+            <lit>多线程原理_多线程内存图解     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>09_Thread</lit>
+          </run>
+          <run>
+            <lit>类的常用方法_获取线程名称  </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>10_Thread</lit>
+          </run>
+          <run>
+            <lit>类的常用方法_设置线程名称  </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>11_Thread</lit>
+          </run>
+          <run>
+            <lit>类的常用方法_sleep     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>12_</lit>
+          </run>
+          <run>
+            <lit>创建多线程程序的第二种方式_实现   </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>13_Thread</lit>
+          </run>
+          <run>
+            <lit>和Runnable的区别     </lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>14_</lit>
+          </run>
+          <run>
+            <lit>匿名内部类方式实现线程的创建  </lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <start-no-earlier-than>2020-09-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t21">
+    <title>Spark学习</title>
+    <type>group</type>
+  </task>
+  <task id="t23">
+    <title>Hadoop学习</title>
+    <type>group</type>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color space="srgb" r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
