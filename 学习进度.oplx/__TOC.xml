@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2" file-format-version="2">
-  <window x="8" y="181" w="1252" h="654">
+  <window x="205" y="123" w="1252" h="654">
     <editing-scenario>begFv7qGWc2</editing-scenario>
     <view>task</view>
     <change-tracking/>

@@ -74,6 +74,7 @@
   <task id="t4">
     <title>内部类案例+自由类</title>
     <effort>57600</effort>
+    <effort-done>23400</effort-done>
     <start-constraint-date>2020-08-28T08:45:00.000Z</start-constraint-date>
     <note>
       <text>

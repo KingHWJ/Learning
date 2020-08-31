@@ -47,6 +47,9 @@
       <change idref="t14" attribute="title" type="string" to="并发与并行"/>
     </change>
   </task-change-set>
+  <task-change-set user="kinghwj" date="2020-08-31T09:38:01.429Z" timestamp="2020-08-31T09:38:01.429Z">
+    <change idref="t4" attribute="internalEffortDone" type="real" from="0" to="23400" resolved="yes"/>
+  </task-change-set>
   <metadata-change-set user="kinghwj" date="2020-08-31T09:36:47.619Z" timestamp="2020-08-31T09:36:47.619Z">
     <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2020-08-31T00:00:00.000Z" resolved="yes"/>
     <change idref="m1" attribute="currencyName" type="string" to="¥1,234.56" resolved="yes"/>
