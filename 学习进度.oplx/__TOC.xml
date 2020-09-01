@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2" file-format-version="2">
-  <window x="205" y="123" w="1252" h="654">
+  <window x="188" y="123" w="1252" h="654">
     <editing-scenario>begFv7qGWc2</editing-scenario>
     <view>task</view>
     <change-tracking/>
@@ -13,7 +13,7 @@
         <column name="Title" width="221"/>
         <column name="Effort" width="70"/>
         <expanded-items idrefs="t2"/>
-        <selected-items-at-filter-time idrefs="t8 t24 t4 t9 t22 t11 t5 t25 t6 t23 t2 t7 t21 t10 t3"/>
+        <selected-items-at-filter-time idrefs="t4 t10 t23 t2 t8 t21 t6"/>
       </outline>
       <gantt-view x="-3" y="0" w="914" h="572">
         <view-mode>actual</view-mode>
