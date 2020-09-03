@@ -74,7 +74,7 @@
   <task id="t4">
     <title>内部类案例+自由类</title>
     <effort>86400</effort>
-    <effort-done>56700</effort-done>
+    <effort-done>86400</effort-done>
     <start-constraint-date>2020-08-28T08:45:00.000Z</start-constraint-date>
     <note>
       <text>
@@ -430,6 +430,7 @@
   <task id="t6">
     <title>Collection集合+泛型+斗地主案例</title>
     <effort>28800</effort>
+    <effort-done>28800</effort-done>
     <start-constraint-date>2020-09-02T00:00:00.000Z</start-constraint-date>
     <note>
       <text>
