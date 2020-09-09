@@ -5,10 +5,14 @@ public class TicketTest {
     public static void main(String[] args) {
 
 //        Runnable r = new SellTicket();
-    // 枷锁了
-//        Runnable r = new SameCodeBlock();
+        // 加锁了
+        // Runnable r = new SameCodeBlock();
+
         // 同步方法
-        Runnable r = new SameCodeMethod();
+//        Runnable r = new SameCodeMethod();
+
+        // Lock锁
+        Runnable r = new LockThread();
         System.out.println(r);
 
         Thread t1 = new Thread(r);
