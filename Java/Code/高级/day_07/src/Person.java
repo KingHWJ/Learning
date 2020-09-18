@@ -2,7 +2,9 @@ import java.io.Serializable;
 
 public class Person implements Serializable {
 
+    private static final long serialVersionUID = 10L;
     private String name;
+//    transient int age;
     private int age;
 
     public String getName() {
