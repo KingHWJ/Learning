@@ -3,12 +3,21 @@ import java.io.*;
 public class FileTest {
 
     public static void main(String[] args) throws IOException {
+        show(new File("/Users/laohangdeche/Downloads/"));
 
-        BufferedReader bi = new BufferedReader(new FileReader("/Users/laohangdeche/Downloads/尚硅谷大数据之Hadoop视频/4.视频"));
-        int len = 0;
-        byte[] bytes = new byte[1024];
-        while ((len = bi.read())!= -1){
-            System.out.println(len);
+    }
+
+    public static void show (File file){
+
+        if(file.isDirectory()){
+            System.out.println("- " + file.getName());
+            for (File listFile : file.listFiles()) {
+                show(listFile);
+            }
+        }else{
+            if(!file.getName().equals(".DS_Store")){
+                System.out.println("    - " + file.getName());
+            }
         }
 
     }
