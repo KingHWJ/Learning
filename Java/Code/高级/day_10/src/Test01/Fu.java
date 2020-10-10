@@ -2,10 +2,12 @@ package Test01;
 
 public class Fu {
 
-    Fu(int i){
+    private String name;
+
+    Fu(int i) {
+        this.name = "我是父类";
         System.out.println("我是父类的有参构造函数，参数为：" + i);
     }
-
 
 
     {
