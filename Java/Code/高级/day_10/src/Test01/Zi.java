@@ -19,4 +19,18 @@ public class Zi extends Fu{
     {
         System.out.println("abc");
     }
+
+    @Override
+    void add() {
+        System.out.println("我是子类方法");
+    }
+
+    void minus(){
+        System.out.println("我是子类特有方法");
+    }
+
+    public static void main(String[] args) {
+
+        new Zi().minus();
+    }
 }

@@ -17,4 +17,8 @@ public class Fu {
     static {
         System.out.println("我是父类的静态代码域");
     }
+
+    void add(){
+        System.out.println("我是父类方法");
+    }
 }
