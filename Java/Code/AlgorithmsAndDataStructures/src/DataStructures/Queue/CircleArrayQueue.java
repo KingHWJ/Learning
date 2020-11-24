@@ -2,27 +2,22 @@ package DataStructures.Queue;
 
 import java.util.Scanner;
 
-// 数组实现队列
-public class ArrayQueue {
+// 数组实现环形队列
+public class CircleArrayQueue {
 
     private int max_size;
-    private int front;        // 头指针，取数用
-    private int rear;         // 尾指针，存数用
+    private int front;        // 头指针，初始为0
+    private int rear;         // 尾指针，初始为0，默认指向最后一个元素的后一个位置
     private int[] arrayQueue; // 存储数据
 
-    public ArrayQueue(int arrayMaxSize) {
+    public CircleArrayQueue(int arrayMaxSize) {
         max_size = arrayMaxSize;
         arrayQueue = new int[max_size];
-        front = -1;
-        rear = -1;
     }
 
-    // 判断队列是否满了
+    // 判断队列是否满了 约定空出一个空间，
     public boolean isFull() {
-        if (rear == max_size - 1) {
-            return true;
-        }
-        return false;
+        return (rear + 1) % max_size == front;
     }
 
     // 判断队列是否为空
@@ -36,10 +31,11 @@ public class ArrayQueue {
     // 添加数据
     public void add(int data) {
         if (isFull()) {
-            throw new RuntimeException("队列已满，无法添加数据~");
+            System.out.println("队列已满，无法添加数据~");
         }
-        rear++;     // 尾指针后移
         arrayQueue[rear] = data;
+        // 移动指针 必须考虑取模，如果只是r + 1，则有可能越界
+        rear = (rear + 1) % max_size;
     }
 
     // 取一个数
@@ -47,14 +43,25 @@ public class ArrayQueue {
         if (isEmpty()) {
             throw new RuntimeException("队列为空，无法取出数据~");
         }
-        front++;    // 头指针后移
-        return arrayQueue[front];
+        // 先把front 对应的值保留到一个临时变量，一定要存储，否则无法返回
+        // 将front 右移，考虑取模，否则越界
+        // 将临时变量返回
+        int temp = arrayQueue[front];
+        front = (front + 1) % max_size;
+        return temp;
     }
 
     // 展示队列全部数据
     public void show() {
-        for (int i = 0; i < arrayQueue.length; i++) {
-            System.out.printf("array[%d] = %d\n", i, arrayQueue[i]);
+        if (isEmpty()) {
+            System.out.println("队列为空，没有数据~");
+            return;
+        }
+        // 遍历从front开始
+        // 环形结构，i 超出数组长度，取模会跳到前面
+        for (int i = front; i < front + size(); i++) {
+            System.out.printf("array[%d] = %d", i % max_size, arrayQueue[i % max_size]);
+            System.out.println("");
         }
     }
 
@@ -63,12 +70,18 @@ public class ArrayQueue {
         if (isEmpty()) {
             throw new RuntimeException("队列为空，没有头部数据~");
         }
-        System.out.println("当前头部数据为：" + arrayQueue[front + 1]);
+        System.out.println("当前头部数据为：" + arrayQueue[front]);
+    }
+
+    // 当前数据有效个数
+    public int size() {
+        // (max_size - front)  + (0 + rear)
+        return (max_size - front + rear) % max_size;
     }
 
     public static void main(String[] args) {
 
-        ArrayQueue arrayQueue = new ArrayQueue(3);
+        CircleArrayQueue arrayQueue = new CircleArrayQueue(3);
         a:
         {
             while (true) {
@@ -88,7 +101,7 @@ public class ArrayQueue {
                         break;
                     case 'g':
                         int num = arrayQueue.get();
-                        System.out.println("取出一个数："+num);
+                        System.out.println("取出一个数：" + num);
                         break;
                     case 'h':
                         arrayQueue.showHead();

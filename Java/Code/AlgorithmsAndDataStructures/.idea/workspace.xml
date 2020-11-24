@@ -40,7 +40,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.ArrayQueue">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DataStructures.Queue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CircleArrayQueue">
     <configuration name="ArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.Queue.ArrayQueue" />
       <module name="AlgorithmsAndDataStructures" />
@@ -54,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.Array.BasicArray" />
+    <configuration name="CircleArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Queue.CircleArrayQueue" />
       <module name="AlgorithmsAndDataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructures.Array.*" />
+          <option name="PATTERN" value="DataStructures.Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircleArrayQueue" />
         <item itemvalue="Application.ArrayQueue" />
+        <item itemvalue="Application.test1" />
         <item itemvalue="Application.SparseArray" />
         <item itemvalue="Application.Tower" />
-        <item itemvalue="Application.test1" />
-        <item itemvalue="Application.BasicArray" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605851897450</updated>
       <workItem from="1605851899848" duration="7420000" />
-      <workItem from="1606108835081" duration="15142000" />
+      <workItem from="1606108835081" duration="18923000" />
     </task>
     <servers />
   </component>
@@ -154,25 +159,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606136459457" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1606201409040">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1606219933389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606201409040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606219933389" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606117277318" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1606201409039">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1606219933387">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606201409039" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606219933387" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/32.25.1408.875@32.25.1408.875" timestamp="1606117277316" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1606201409038">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1606219933385">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606201409038" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606219933385" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/32.25.1408.875@32.25.1408.875" timestamp="1606117277315" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1606201409040">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1606219933388">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606201409040" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606219933388" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/32.25.1408.875@32.25.1408.875" timestamp="1606117277317" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1606192665497">
       <screen x="0" y="0" width="1440" height="900" />
