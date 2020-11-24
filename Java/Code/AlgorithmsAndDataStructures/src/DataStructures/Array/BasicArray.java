@@ -1,6 +1,6 @@
 package DataStructures.Array;
 
-public class MyArray {
+public class BasicArray {
     // 定义一个数组
     private int[] intArray;
     // 定义数组的实际有效长度
@@ -8,12 +8,19 @@ public class MyArray {
     // 定义数组的最大长度
     private int length;
 
-    public MyArray() {
+    public BasicArray() {
         elems = 0;
         length = 5;
         intArray = new int[length];
     }
-    
+
+    // 指定数组长度大小
+    public BasicArray(int length){
+        elems = 0;
+        this.length = length;
+        intArray = new int[length];
+    }
+
     // 获取数组有效长度
     public int getSize(){
         return elems;
@@ -99,7 +106,7 @@ public class MyArray {
     }
 
     public static void main(String[] args) {
-        MyArray oneArray = new MyArray();
+        BasicArray oneArray = new BasicArray();
         oneArray.add(10);
         oneArray.add(10);
         oneArray.add(3);

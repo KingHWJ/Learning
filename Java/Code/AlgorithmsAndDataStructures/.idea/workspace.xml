@@ -37,10 +37,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager">
-    <configuration name="MyArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.Array.MyArray" />
+  <component name="RunManager" selected="Application.ArrayQueue">
+    <configuration name="ArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Queue.ArrayQueue" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Array.BasicArray" />
       <module name="AlgorithmsAndDataStructures" />
       <extension name="coverage">
         <pattern>
@@ -52,20 +67,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Array.SparseArray" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithms.ClassicalProblems.Tower" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Algorithms.ClassicalProblems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.ZongHeTest.test1" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.ZongHeTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyArray" />
+        <item itemvalue="Application.ArrayQueue" />
+        <item itemvalue="Application.SparseArray" />
+        <item itemvalue="Application.Tower" />
+        <item itemvalue="Application.test1" />
+        <item itemvalue="Application.BasicArray" />
       </list>
     </recent_temporary>
   </component>
@@ -77,7 +137,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605851897450</updated>
-      <workItem from="1605851899848" duration="5348000" />
+      <workItem from="1605851899848" duration="7420000" />
+      <workItem from="1606108835081" duration="14761000" />
     </task>
     <servers />
   </component>
@@ -85,41 +146,61 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1605853595044">
+    <state x="235" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606201139923">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1605853595044" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1605858778577">
+    <state x="235" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606201139923" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1606136459457">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605858778577" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1605858778576">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606136459457" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1606201409040">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605858778576" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1605858778575">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606201409040" />
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606117277318" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1606201409039">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605858778575" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1605858778576">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606201409039" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center/32.25.1408.875@32.25.1408.875" timestamp="1606117277316" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1606201409038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605858778576" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1605858442146">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606201409038" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left/32.25.1408.875@32.25.1408.875" timestamp="1606117277315" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1606201409040">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605858442146" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1605858442146">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606201409040" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right/32.25.1408.875@32.25.1408.875" timestamp="1606117277317" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1606192665497">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605858442146" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1605858442145">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606192665497" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606117278113" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1606192665496">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605858442145" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1605858442146">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606192665496" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/32.25.1408.875@32.25.1408.875" timestamp="1606117278096" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1606192665495">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605858442146" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606192665495" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/32.25.1408.875@32.25.1408.875" timestamp="1606117278095" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1606192665496">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606192665496" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/32.25.1408.875@32.25.1408.875" timestamp="1606117278112" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1606201048197">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606201048197" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606109331167">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606109331167" />
   </component>
 </project>
