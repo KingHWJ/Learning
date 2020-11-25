@@ -22,10 +22,7 @@ public class CircleArrayQueue {
 
     // 判断队列是否为空
     public boolean isEmpty() {
-        if (rear == front) {
-            return true;
-        }
-        return false;
+        return rear == front;
     }
 
     // 添加数据
@@ -42,6 +39,7 @@ public class CircleArrayQueue {
     public int get() {
         if (isEmpty()) {
             throw new RuntimeException("队列为空，无法取出数据~");
+
         }
         // 先把front 对应的值保留到一个临时变量，一定要存储，否则无法返回
         // 将front 右移，考虑取模，否则越界
@@ -81,7 +79,7 @@ public class CircleArrayQueue {
 
     public static void main(String[] args) {
 
-        CircleArrayQueue arrayQueue = new CircleArrayQueue(3);
+        CircleArrayQueue arrayQueue = new CircleArrayQueue(5);
         a:
         {
             while (true) {

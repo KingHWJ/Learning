@@ -27,16 +27,14 @@ public class ArrayQueue {
 
     // 判断队列是否为空
     public boolean isEmpty() {
-        if (rear == front) {
-            return true;
-        }
-        return false;
+        return rear == front;
     }
 
     // 添加数据
     public void add(int data) {
         if (isFull()) {
             throw new RuntimeException("队列已满，无法添加数据~");
+//            System.out.println("队列已满，无法添加数据~");
         }
         rear++;     // 尾指针后移
         arrayQueue[rear] = data;
@@ -46,6 +44,7 @@ public class ArrayQueue {
     public int get() {
         if (isEmpty()) {
             throw new RuntimeException("队列为空，无法取出数据~");
+//            System.out.println("队列已满，无法添加数据~");
         }
         front++;    // 头指针后移
         return arrayQueue[front];
@@ -68,7 +67,7 @@ public class ArrayQueue {
 
     public static void main(String[] args) {
 
-        ArrayQueue arrayQueue = new ArrayQueue(3);
+        ArrayQueue arrayQueue = new ArrayQueue(5);
         a:
         {
             while (true) {
