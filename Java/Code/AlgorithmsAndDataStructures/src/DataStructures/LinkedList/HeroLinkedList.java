@@ -1,8 +1,12 @@
 package DataStructures.LinkedList;
 
+import java.util.Stack;
+
 public class HeroLinkedList {
 
     public static void main(String[] args) {
+
+        System.out.println("单向节点测试-----------------------------");
         HeroSingleLinkedList heroSingleLinkedList = new HeroSingleLinkedList();
 
         HeroNode hero1 = new HeroNode(1, "及时雨", "宋江");
@@ -27,17 +31,86 @@ public class HeroLinkedList {
         heroSingleLinkedList.update(new HeroNode(3,"智多星吗？","没用"));
         heroSingleLinkedList.show();
         System.out.println("删除后-----------------");
-        heroSingleLinkedList.delete(hero3);
-//        heroSingleLinkedList.delete(new HeroNode(5,"",""));
+//        heroSingleLinkedList.delete(hero3);
+        heroSingleLinkedList.delete(new HeroNode(5,"",""));
+        heroSingleLinkedList.show();
+        System.out.println("反转后-----------------");
+//        HeroSingleLinkedList.reverse(heroSingleLinkedList.getHead());
         heroSingleLinkedList.show();
 
+        System.out.println("逆序打印,不破坏链表的结构------");
+        HeroSingleLinkedList.reversePrint(heroSingleLinkedList.getHead());
+        System.out.println("原链表为：");
+        heroSingleLinkedList.show();
+
+        System.out.println("\n\n双向节点测试-----------------------------");
+        HeroDoubleLinkedList heroDoubleLinkedList = new HeroDoubleLinkedList();
+        Hero2Node herod_1 = new Hero2Node(1, "及时雨", "宋江");
+        Hero2Node herod_2 = new Hero2Node(2, "玉麒麟", "卢俊义");
+        Hero2Node herod_3 = new Hero2Node(3, "智多星", "吴用");
+        Hero2Node herod_4 = new Hero2Node(4, "入云龙", "公孙胜");
+        heroDoubleLinkedList.add(herod_1);
+        heroDoubleLinkedList.add(herod_2);
+        heroDoubleLinkedList.add(herod_3);
+        heroDoubleLinkedList.add(herod_4);
+        heroDoubleLinkedList.show();
 
     }
 }
 
+// 单向链表
 class HeroSingleLinkedList {
 
     private HeroNode head = new HeroNode(0, "", "");
+
+    public HeroNode getHead() {
+        return head;
+    }
+
+    // 逆序打印
+    public static void reversePrint(HeroNode head){
+        /*
+        1.利用栈的先入后出的原理，遍历每个节点，进行压栈
+        2.遍历栈，进行出栈打印
+         */
+        Stack<HeroNode> stack = new Stack<>();
+        HeroNode cur = head.next;
+        while (cur != null){
+            stack.push(cur);
+            cur = cur.next;
+        }
+
+        while (stack.size() > 0) {
+            System.out.println(stack.pop());
+        }
+    }
+
+    // 反转节点
+    public static HeroNode reverse(HeroNode head){
+        // 节点为空，或只有一个节点，无需反转
+        if(head.next == null || head.next.next == null){
+            return null;
+        }
+        /*
+        1.需要定义三个节点变量，cur -- 当前节点，next -- 当前节点的下一个节点，newHead -- 接住反转的节点
+        2.当期节点持续向右遍历,摘下当前节点，进行插首操作：cur指向newHead的next节点，同时newHead节点，指向cur节点
+        3.cur节点右移,直到cur == null
+        4.head的next节点 指向newHead的next节点
+         */
+        HeroNode cur = head.next;
+        HeroNode next = null;
+        HeroNode newHead = new HeroNode(0,"","");
+
+        while (cur != null){
+            next = cur.next;            // 暂时先保存cur节点下一个节点，因为改变cur节点next指向，如果不保存会丢失
+            cur.next = newHead.next;    // 原链表当前节点（被摘下）指向新链表头指向的next节点（插首操作）
+            newHead.next = cur;         // 新链表next指向当前被摘下的节点
+            cur = next;                 // 指针右移
+        }
+        head.next = newHead.next;       // 将原链表的头，指向已经反转的新链表
+        return head;
+    }
+
 
     // 添加数据
     public void add(HeroNode node) {
@@ -203,4 +276,74 @@ class HeroNode {
                 ", name='" + name + '\'' +
                 '}';
     }
+}
+
+// 双向链表
+class Hero2Node{
+    public int no;             // 编号
+    public String nickname;    // 绰号
+    public String name;        // 姓名
+
+    public Hero2Node next;      // 下一个节点
+    public Hero2Node pre;       // 前一个节点
+
+    public Hero2Node(int hNo, String hNickname, String hName) {
+        this.no = hNo;
+        this.nickname = hNickname;
+        this.name = hName;
+    }
+
+    @Override
+    public String toString() {
+        return "Hero2Node{" +
+                "no=" + no +
+                ", nickname='" + nickname + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
+
+class HeroDoubleLinkedList{
+
+    private Hero2Node head = new Hero2Node(0,"","");
+
+    public Hero2Node getHead() {
+        return head;
+    }
+
+    // 增加节点
+    // 添加数据
+    public void add(Hero2Node node) {
+        /*
+        1.从头节点开始，在最后面添加
+        2.head节点不能动， 需要一个temp变量，遍历
+         */
+        Hero2Node temp = head;
+        while (true) {
+            // 找到最后一个节点
+            if (temp.next == null) {
+                break;
+            }
+            // 节点后移
+            temp = temp.next;
+        }
+        temp.next = node;
+    }
+
+    // 显示链表信息
+    public void show() {
+        if (head.next == null) {
+            System.out.println("这是一条空链表");
+            return;
+        }
+        Hero2Node temp = head.next;
+        while (true) {
+            System.out.println(temp.toString());
+            if (temp.next == null) {
+                break;
+            }
+            temp = temp.next;
+        }
+    }
+
 }
