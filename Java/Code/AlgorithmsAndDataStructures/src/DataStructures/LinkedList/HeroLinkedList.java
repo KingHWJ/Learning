@@ -31,8 +31,8 @@ public class HeroLinkedList {
         heroSingleLinkedList.update(new HeroNode(3,"智多星吗？","没用"));
         heroSingleLinkedList.show();
         System.out.println("删除后-----------------");
-//        heroSingleLinkedList.delete(hero3);
-        heroSingleLinkedList.delete(new HeroNode(5,"",""));
+        heroSingleLinkedList.delete(hero4);
+//        heroSingleLinkedList.delete(new HeroNode(5,"",""));
         heroSingleLinkedList.show();
         System.out.println("反转后-----------------");
 //        HeroSingleLinkedList.reverse(heroSingleLinkedList.getHead());
@@ -53,6 +53,12 @@ public class HeroLinkedList {
         heroDoubleLinkedList.add(herod_2);
         heroDoubleLinkedList.add(herod_3);
         heroDoubleLinkedList.add(herod_4);
+        heroDoubleLinkedList.show();
+        System.out.println("修改后-----------------");
+        heroDoubleLinkedList.update(new Hero2Node(3,"智多星吗？","没用"));
+        heroDoubleLinkedList.show();
+        System.out.println("删除后-----------------");
+        heroDoubleLinkedList.delete(herod_4);
         heroDoubleLinkedList.show();
 
     }
@@ -317,6 +323,7 @@ class HeroDoubleLinkedList{
         /*
         1.从头节点开始，在最后面添加
         2.head节点不能动， 需要一个temp变量，遍历
+        3.设置前指针指向，设置后指针指向
          */
         Hero2Node temp = head;
         while (true) {
@@ -324,10 +331,11 @@ class HeroDoubleLinkedList{
             if (temp.next == null) {
                 break;
             }
-            // 节点后移
             temp = temp.next;
         }
         temp.next = node;
+        node.pre = temp;
+
     }
 
     // 显示链表信息
@@ -344,6 +352,75 @@ class HeroDoubleLinkedList{
             }
             temp = temp.next;
         }
+    }
+
+    // 更新链表信息
+    public void update(Hero2Node node){
+        /*
+        1.找到该链表的位置
+        2.替换内容，节点无需更改
+         */
+        if(head.next == null){
+            System.out.println("链表为空");
+            return;
+        }
+        Hero2Node temp = head;
+        boolean exists_flag = false;
+        while (true){
+            // 链表已到末尾
+            if(temp.next == null){
+                System.out.println("没有找到该节点，更新失败");
+                break;
+            }
+            if(temp.no == node.no){
+                exists_flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+
+        if(exists_flag){
+            temp.name = node.name;
+            temp.nickname = node.nickname;
+            System.out.println("节点更新成功");
+        }
+    }
+
+    // 删除节点信息
+    public void delete(Hero2Node node){
+        /*
+        找到待删除的节点
+        1.temp.pre.next = temp.next
+          temp.next.pre = temp.pre
+        2.需要考虑，后节点我null时，无法调用到其pre指针，这部分需要特殊考虑
+         */
+        if(head.next == null){
+            System.out.println("链表为空");
+            return;
+        }
+        Hero2Node cur = head.next;
+        boolean exists_flag = false;
+        while (true){
+            if(cur == null){
+                System.out.println("没有找到该节点，删除失败");
+                break;
+            }
+            if(cur.no == node.no){
+                exists_flag = true;
+                break;
+            }
+            cur = cur.next;
+        }
+        if(exists_flag){
+            // 节点指向调整
+            cur.pre.next = cur.next;    // 前一个节点next  --> 后一个节点
+            // 针对最后一个节点，特殊处理
+            if(cur.next != null){
+                cur.next.pre = cur.pre;     // 后一个节点的pre --> 前一个节点
+            }
+            System.out.println("节点删除成功");
+        }
+
     }
 
 }
