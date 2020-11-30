@@ -12,21 +12,26 @@ public class DoubleLinkedList {
         Node2 node2 = new Node2(4);
         Node2 node3 = new Node2(3);
         Node2 node4 = new Node2(10);
-        Node2 node5 = new Node2(0);
+        Node2 node5 = new Node2(17);
+        Node2 node6 = new Node2(100);
+        Node2 node7 = new Node2(7);
 
-        doubleLinkedList.print("末尾添加数据");
-        doubleLinkedList.add(node1);
-        doubleLinkedList.add(node2);
-        doubleLinkedList.add(node3);
-        doubleLinkedList.add(node4);
-        doubleLinkedList.show();
-
+//        doubleLinkedList.print("末尾添加数据");
+//        doubleLinkedList.add(node1);
+//        doubleLinkedList.add(node2);
+//        doubleLinkedList.add(node3);
+//        doubleLinkedList.add(node4);
+//        doubleLinkedList.show();
+//
         doubleLinkedList.print("按顺序添加数据");
         doubleLinkedList.addIn(node1);
+        doubleLinkedList.addIn(node3);
         doubleLinkedList.addIn(node2);
         doubleLinkedList.addIn(node5);
         doubleLinkedList.addIn(node1);
         doubleLinkedList.addIn(node4);
+        doubleLinkedList.addIn(node6);
+        doubleLinkedList.addIn(node7);
         doubleLinkedList.show();
 
         doubleLinkedList.print("获取链表长度");
@@ -40,7 +45,7 @@ public class DoubleLinkedList {
         doubleLinkedList.show();
 
         doubleLinkedList.print("双向链表反转");
-        reverse(doubleLinkedList.getHead());
+//        reverse(doubleLinkedList.getHead());
         doubleLinkedList.show();
 
         doubleLinkedList.print("查找倒数第2个节点");
@@ -153,38 +158,53 @@ public class DoubleLinkedList {
 
     // 在中间位置添加
     public void addIn(Node2 node) {
+
         // 空链表，直接在头字段后面添加
         if (head.next == null) {
             head.next = node;
+            node.pre = head;
             System.out.println("节点: " + node.data + " 已成功添加");
             return;
         }
+
         boolean exists_flag = false;
-        Node2 temp = head;
+        Node2 temp = head;     // 如果直接使用head.next 如果最后到null节点，无法调用pre节点
+
         // 寻找准确的位置
         while (true) {
+
             // 到了节点的尾部，直接添加到尾部
             if (temp.next == null) {
                 exists_flag = true;
                 break;
             }
+
             // 找到了重复的数据
-            if (temp.next.data == node.data) {
+            if (temp.data == node.data) {
                 System.out.println("该节点: " + node.data + " 已存在，无法添加");
                 break;
             }
-            // 找到了要放的位置
+            // 找到了要放的位置 (放在较大值的前一个位置，如果没有找到，说明这个数是最大的）
             if(temp.next.data > node.data){
                 exists_flag = true;
                 break;
             }
+
             temp = temp.next;
         }
         if (exists_flag == true) {
+
             node.next = temp.next;
-            node.pre = temp;
+            if(temp.next != null){
+                temp.next.pre = node;
+            }
             temp.next = node;
-            temp.next.pre = node;
+            node.pre = temp;
+
+//            node.next = temp.next;
+//            node.pre = temp;
+//            temp.next = node;
+//            temp.next.pre = node;
             System.out.println("节点: " + node.data + " 已成功添加");
         }
     }
@@ -221,24 +241,25 @@ public class DoubleLinkedList {
             System.out.println("链表为空，删除失败");
             return;
         }
-        Node2 temp = head;
+        Node2 temp = head.next;
         boolean exists_flag = false;
+
         while (true) {
-            if (temp.next == null) {
+            if (temp == null) {
                 System.out.printf("未发现该节点%d，删除失败！\n", node.data);
                 break;
             }
-            if (temp.next.data == node.data) {
+            if (temp.data == node.data) {
                 exists_flag = true;
                 break;
             }
             temp = temp.next;
         }
         if (exists_flag == true) {
-            temp.next = temp.next.next;
+            temp.pre.next = temp.next;
             // 最后一个节点需要特别注意，null没有pre指针
             if(temp.next != null)
-                temp.next.next.pre = temp.next;
+                temp.next.pre = temp.pre;
             System.out.println(node.toString() + "节点已删除");
         }
 
