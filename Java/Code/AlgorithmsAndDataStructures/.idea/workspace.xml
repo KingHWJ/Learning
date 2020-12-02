@@ -49,9 +49,22 @@
       <recent name="$PROJECT_DIR$/src/DataStructures/LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicStack">
+  <component name="RunManager" selected="Application.Calculator">
     <configuration name="BasicStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.Stack.BasicStack" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Stack.Calculator" />
       <module name="AlgorithmsAndDataStructures" />
       <extension name="coverage">
         <pattern>
@@ -89,19 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeroLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.LinkedList.HeroLinkedList" />
-      <module name="AlgorithmsAndDataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DataStructures.LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SingleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.LinkedList.SingleLinkedList" />
       <module name="AlgorithmsAndDataStructures" />
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.BasicStack" />
         <item itemvalue="Application.CircleLinkedList" />
         <item itemvalue="Application.DoubleLinkedList" />
         <item itemvalue="Application.SingleLinkedList" />
-        <item itemvalue="Application.HeroLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,7 @@
       <workItem from="1606438729905" duration="13773000" />
       <workItem from="1606699551111" duration="3712000" />
       <workItem from="1606786121078" duration="6836000" />
-      <workItem from="1606871792155" duration="2153000" />
+      <workItem from="1606871792155" duration="15484000" />
     </task>
     <servers />
   </component>
@@ -181,54 +181,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="235" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606201139923" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1606740681606">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1606888359503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606740681606" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606888359503" />
     <state x="553" y="190" key="#com.intellij.ide.util.MemberChooser/32.25.1408.875@32.25.1408.875" timestamp="1606398167214" />
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606292601711">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1606292601711" />
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1606873900865">
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1606900473359">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606873900865" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606900473359" />
     <state width="1398" height="218" key="GridCell.Tab.0.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606801515675" />
-    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1606873900863">
+    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1606900473358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606873900863" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606900473358" />
     <state width="1398" height="218" key="GridCell.Tab.0.center/32.25.1408.875@32.25.1408.875" timestamp="1606801515673" />
-    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1606873900863">
+    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1606900473357">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606873900863" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606900473357" />
     <state width="1398" height="218" key="GridCell.Tab.0.left/32.25.1408.875@32.25.1408.875" timestamp="1606801515672" />
-    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1606873900864">
+    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1606900473358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606873900864" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606900473358" />
     <state width="1398" height="218" key="GridCell.Tab.0.right/32.25.1408.875@32.25.1408.875" timestamp="1606801515674" />
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1606804112254">
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1606897638451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606804112254" />
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606897638451" />
     <state width="1366" height="281" key="GridCell.Tab.1.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606444645800" />
-    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1606804112253">
+    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1606897638450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606804112253" />
+    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606897638450" />
     <state width="1366" height="281" key="GridCell.Tab.1.center/32.25.1408.875@32.25.1408.875" timestamp="1606444645799" />
-    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1606804112252">
+    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1606897638450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606804112252" />
+    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606897638450" />
     <state width="1366" height="281" key="GridCell.Tab.1.left/32.25.1408.875@32.25.1408.875" timestamp="1606444645798" />
-    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1606804112254">
+    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1606897638451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606804112254" />
+    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606897638451" />
     <state width="1366" height="281" key="GridCell.Tab.1.right/32.25.1408.875@32.25.1408.875" timestamp="1606444645799" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1606800342019">
       <screen x="0" y="0" width="1440" height="900" />
@@ -257,6 +257,11 @@
           <url>file://$PROJECT_DIR$/src/DataStructures/LinkedList/DoubleLinkedList.java</url>
           <line>34</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DataStructures/Stack/Calculator.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
