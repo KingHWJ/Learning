@@ -107,7 +107,7 @@ public class CircleLinkedList {
         System.out.println("最后还剩下：" + first.no);
 
     }
-    
+
     public static void main(String[] args) {
         CircleLinkedList circle = new CircleLinkedList();
         circle.create(5);
