@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bc9eef62-6eb9-495e-b626-baf51e8bbc26" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +52,7 @@
       <recent name="$PROJECT_DIR$/src/DataStructures/LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RunManager" selected="Application.CalculatorTest">
     <configuration name="BasicStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.Stack.BasicStack" />
       <module name="AlgorithmsAndDataStructures" />
@@ -65,6 +68,19 @@
     </configuration>
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.Stack.Calculator" />
+      <module name="AlgorithmsAndDataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Stack.CalculatorTest" />
       <module name="AlgorithmsAndDataStructures" />
       <extension name="coverage">
         <pattern>
@@ -102,37 +118,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.LinkedList.SingleLinkedList" />
-      <module name="AlgorithmsAndDataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DataStructures.LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.CalculatorTest" />
         <item itemvalue="Application.BasicStack" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.CircleLinkedList" />
         <item itemvalue="Application.DoubleLinkedList" />
-        <item itemvalue="Application.SingleLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +162,10 @@
       <workItem from="1606438729905" duration="13773000" />
       <workItem from="1606699551111" duration="3712000" />
       <workItem from="1606786121078" duration="6836000" />
-      <workItem from="1606871792155" duration="15484000" />
+      <workItem from="1606871792155" duration="17298000" />
+      <workItem from="1606962188628" duration="1458000" />
+      <workItem from="1606993806025" duration="4712000" />
+      <workItem from="1606999398996" duration="749000" />
     </task>
     <servers />
   </component>
@@ -190,54 +198,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="421" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1606292601711" />
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1606900473359">
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1606999984628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606900473359" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606999984628" />
     <state width="1398" height="218" key="GridCell.Tab.0.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606801515675" />
-    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1606900473358">
+    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1606999984627">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606900473358" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606999984627" />
     <state width="1398" height="218" key="GridCell.Tab.0.center/32.25.1408.875@32.25.1408.875" timestamp="1606801515673" />
-    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1606900473357">
+    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1606999984626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606900473357" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606999984626" />
     <state width="1398" height="218" key="GridCell.Tab.0.left/32.25.1408.875@32.25.1408.875" timestamp="1606801515672" />
-    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1606900473358">
+    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1606999984627">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606900473358" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606999984627" />
     <state width="1398" height="218" key="GridCell.Tab.0.right/32.25.1408.875@32.25.1408.875" timestamp="1606801515674" />
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1606897638451">
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1606999785421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606897638451" />
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606999785421" />
     <state width="1366" height="281" key="GridCell.Tab.1.bottom/32.25.1408.875@32.25.1408.875" timestamp="1606444645800" />
-    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1606897638450">
+    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1606999785419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606897638450" />
+    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1606999785419" />
     <state width="1366" height="281" key="GridCell.Tab.1.center/32.25.1408.875@32.25.1408.875" timestamp="1606444645799" />
-    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1606897638450">
+    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1606999785418">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606897638450" />
+    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1606999785418" />
     <state width="1366" height="281" key="GridCell.Tab.1.left/32.25.1408.875@32.25.1408.875" timestamp="1606444645798" />
-    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1606897638451">
+    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1606999785420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606897638451" />
+    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1606999785420" />
     <state width="1366" height="281" key="GridCell.Tab.1.right/32.25.1408.875@32.25.1408.875" timestamp="1606444645799" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1606800342019">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606800342019" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606740615263">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606996697589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606740615263" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606996697589" />
     <state x="408" y="216" width="670" height="658" key="search.everywhere.popup/32.25.1408.875@32.25.1408.875" timestamp="1606398029204" />
   </component>
   <component name="XDebuggerManager">
@@ -263,6 +271,16 @@
           <line>45</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DataStructures/Stack/CalculatorTest.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DataStructures/Stack/CalculatorTest.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -270,5 +288,10 @@
         <PinnedItemInfo parentTag="DataStructures.LinkedList.Node2" memberName="pre" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AlgorithmsAndDataStructures$CalculatorTest.ic" NAME="CalculatorTest Coverage Results" MODIFIED="1606999027557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DataStructures.Stack.*</FILTER>
+    </SUITE>
   </component>
 </project>

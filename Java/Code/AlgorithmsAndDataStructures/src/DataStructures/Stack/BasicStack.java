@@ -20,7 +20,8 @@ public class BasicStack {
             System.out.println("（3）入栈");
             System.out.println("（4）出栈");
             System.out.println("（5）显示全部");
-            System.out.println("（6）退出\n");
+            System.out.println("（6）显示头部");
+            System.out.println("（7）退出\n");
 
             System.out.print("请输入功能：");
             char num = scanner.next().charAt(0);
@@ -43,6 +44,9 @@ public class BasicStack {
                     stack.show();
                     break;
                 case '6':
+                    System.out.println(stack.peak());
+                    break;
+                case '7':
                     System.exit(0);
             }
 
@@ -86,6 +90,7 @@ public class BasicStack {
             throw new RuntimeException("栈为空");
         }
         int val = stack[top];
+
         top--;
         return val;
     }
@@ -99,6 +104,14 @@ public class BasicStack {
         for (int i = max_size - 1; i >= 0; i--) {
             System.out.println(stack[i]);
         }
+    }
+
+    // 显示头部数据
+    public int peak(){
+        if(isEmpty()){
+            throw new RuntimeException("栈为空");
+        }
+        return stack[top];
     }
 
 }
